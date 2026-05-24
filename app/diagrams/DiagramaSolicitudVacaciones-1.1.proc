@@ -8,7 +8,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_oFzUhVcEEfG-WqRER0mjbQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_oFzUhlcEEfG-WqRER0mjbQ" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_oFzUh1cEEfG-WqRER0mjbQ" name="Validar solicitud" outgoing="_oFzUuVcEEfG-WqRER0mjbQ _w-o9fFcEEfG-WqRER0mjbQ" incoming="_oFzUtlcEEfG-WqRER0mjbQ" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_oFzUh1cEEfG-WqRER0mjbQ" name="Validar solicitud" outgoing="_oFzUuVcEEfG-WqRER0mjbQ" incoming="_oFzUtlcEEfG-WqRER0mjbQ" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_oFzUiFcEEfG-WqRER0mjbQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_oFzUiVcEEfG-WqRER0mjbQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_oFzUilcEEfG-WqRER0mjbQ" name="" content="" returnTypeFixed="true"/>
@@ -17,7 +17,7 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_oFzUjVcEEfG-WqRER0mjbQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_oFzUjlcEEfG-WqRER0mjbQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_oFzUj1cEEfG-WqRER0mjbQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <BoundaryIntermediateEvents xmi:type="process:NonInterruptingBoundaryTimerEvent" xmi:id="_r5Ex0FcEEfG-WqRER0mjbQ" name="Enviar recordatorio después de 5s.">
+          <BoundaryIntermediateEvents xmi:type="process:NonInterruptingBoundaryTimerEvent" xmi:id="_r5Ex0FcEEfG-WqRER0mjbQ" name="Enviar recordatorio después de 5s." outgoing="_w-o9fFcEEfG-WqRER0mjbQ">
             <condition xmi:type="expression:Expression" xmi:id="_9RxtkFcFEfG-WqRER0mjbQ" name="00:00:05" content="5000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_oFzUkFcEEfG-WqRER0mjbQ">
@@ -107,9 +107,9 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_oFzUxlcEEfG-WqRER0mjbQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_oFzUx1cEEfG-WqRER0mjbQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_w-o9fFcEEfG-WqRER0mjbQ" target="_w-o9cFcEEfG-WqRER0mjbQ" source="_oFzUh1cEEfG-WqRER0mjbQ">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_w-o9fFcEEfG-WqRER0mjbQ" target="_w-o9cFcEEfG-WqRER0mjbQ" source="_r5Ex0FcEEfG-WqRER0mjbQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_w-o9fVcEEfG-WqRER0mjbQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_w-o9flcEEfG-WqRER0mjbQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_w-o9flcEEfG-WqRER0mjbQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="__cTg4lcEEfG-WqRER0mjbQ" target="__cK-AFcEEfG-WqRER0mjbQ" source="_w-o9cFcEEfG-WqRER0mjbQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="__cTg41cEEfG-WqRER0mjbQ"/>
@@ -161,7 +161,7 @@
                 <children xmi:type="notation:DecorationNode" xmi:id="_r5IcMFcEEfG-WqRER0mjbQ" type="5094">
                   <layoutConstraint xmi:type="notation:Location" xmi:id="_r5IcMVcEEfG-WqRER0mjbQ" y="5"/>
                 </children>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r5HOEVcEEfG-WqRER0mjbQ" x="16" y="42"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r5HOEVcEEfG-WqRER0mjbQ" x="8" y="42"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oFzU61cEEfG-WqRER0mjbQ" x="206" y="123"/>
             </children>
@@ -199,7 +199,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_w-o9eVcEEfG-WqRER0mjbQ" type="3027" element="_w-o9cFcEEfG-WqRER0mjbQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_w-o9e1cEEfG-WqRER0mjbQ" type="5017"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w-o9elcEEfG-WqRER0mjbQ" x="179" y="252" width="154" height="77"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w-o9elcEEfG-WqRER0mjbQ" x="152" y="256" width="154" height="77"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="__cK-BFcEEfG-WqRER0mjbQ" type="3003" element="__cK-AFcEEfG-WqRER0mjbQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="__cTg4FcEEfG-WqRER0mjbQ" type="5025">
@@ -264,7 +264,7 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_oFzVKVcEEfG-WqRER0mjbQ" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oFzVKlcEEfG-WqRER0mjbQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_w-o9f1cEEfG-WqRER0mjbQ" type="4001" element="_w-o9fFcEEfG-WqRER0mjbQ" source="_oFzU6VcEEfG-WqRER0mjbQ" target="_w-o9eVcEEfG-WqRER0mjbQ" roundedBendpointsRadius="10" routing="Rectilinear">
+    <edges xmi:type="notation:Connector" xmi:id="_w-o9f1cEEfG-WqRER0mjbQ" type="4001" element="_w-o9fFcEEfG-WqRER0mjbQ" source="_r5HOEFcEEfG-WqRER0mjbQ" target="_w-o9eVcEEfG-WqRER0mjbQ" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_w-o9glcEEfG-WqRER0mjbQ" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_w-o9g1cEEfG-WqRER0mjbQ" y="-10"/>
       </children>
